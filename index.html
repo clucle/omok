@@ -1,23 +1,59 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-<style>
-
- <style type="text/css">
- 
-   body {width: 100%;}
-   #boardWraaper {text-align: center;}
- 
- </style>
-
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>김승훈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+        }
+        .btn {
+            padding: 10px 0;
+            margin: 30px 0;
+            font-size: 20px;
+        }
+        button {
+            width: 100px;
+            padding: 20px;
+        }
+    </style>
+    
+    
 </head>
-
 <body>
-  <div id="boardWraaper">
-  	<canvas id="board" width="600" height="600"></canvas>
-  </div>
+    <script>
+        $(document).ready(function() {
+            
+            $("button").click(function() {
+                location.href="gomoku/" + $(this).attr("id") + ".html"
+            });
+        })
+    </script>
+
+    <div class="container">
+        <div class="menu">
+            <h1>메인메뉴</h1>
+            <div class="btn">
+                <button>사목</button>
+            </div>
+            <div class="btn">
+                <button>더블오목</button>
+            </div>
+            <div class="btn">
+                <button>삼인오목</button>
+            </div>
+            <div class="btn">
+                <button id="basic">기본오목</button>
+            </div>
+        </div>
+    </div>
 </body>
-
-<script type="text/javascript" src="omok.js"></script>
-
 </html>
