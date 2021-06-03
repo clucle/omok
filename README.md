@@ -1,3 +1,3 @@
 # omok  
 
-[execute link]( http://clucle.github.com/omok )
+[execute link]( https://clucle.github.io/omok/ )
